@@ -1,8 +1,20 @@
 *{
-    outline: 1px black solid;
-    background: 1px burlywood;
+    outline: 0px black solid;
+    border: 0px; color: black;
+    border-radius: 1%; 
+}
+body {
+  background-color: burlywood; 
+  border: 5px; color: black
+  
 }
 
-h2 {
-    margin: 55px;
-}
+ h1 {
+     margin: 5px ;
+     outline: 5px black solid; 
+ }
+
+ h2 {margin: 5px;
+    outline: 0px;
+    color: rosybrown;
+ }
