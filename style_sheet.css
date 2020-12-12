@@ -13,4 +13,7 @@ body {
      margin: 5px ;
      outline: 5px black solid; 
  }
- 
+
+section1 {
+   background-color: royalblue;
+}
