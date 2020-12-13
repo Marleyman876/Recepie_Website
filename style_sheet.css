@@ -1,11 +1,8 @@
-*{
-    outline: 0px black solid;
-    border: 0px; color: black;
-    border-radius: 1%; 
-}
-body {
+
+div {
   background-color: burlywood; 
-  border: 5px; color: black
+  border: 1px; border-color: black;
+  border-style: solid;
   
 }
 
