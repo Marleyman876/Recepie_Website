@@ -4,7 +4,7 @@ var promptQuestion = "Will Garfield become a good developer?"
 var response = prompt (promptQuestion); 
 console. log(response);
 
-var alertMessage: 
+var alertMessage;
 
 if (response === "No") {
     alertMessage = "No one really knows, we shall see"
@@ -13,3 +13,4 @@ if (response === "No") {
 } else {
     alertMessage = "I think he will do great things."
 }
+alert(alertMessage);
