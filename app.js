@@ -1,14 +1,3 @@
-var response;
-
-function getPrompt() {
-    var promptQuestion = "Will Garfield become a good developer?";
-    response = prompt(promptQuestion); //value of whatever user gives us
-}
-
-getPrompt();
-
-var color;
-
 function colorResponse(rsp) {
     if (rsp === "Yes"){
         color = "lightgreen";
@@ -17,10 +6,43 @@ function colorResponse(rsp) {
     }
 }
 
+
+function giveAlert(ans){
+    if(ans == "Yes"){
+        alertMessage = "ice cream is good for your soul"
+    } else {
+        alertMessage = "you have not lived!"
+    }
+    alert(alertMessage);
+}
+
+function getPrompt(message) {
+    response = prompt(message); //value of whatever user gives us
+}
+
+var response;
+
+var promptQuestion = "Will Garfield become a good developer?";
+getPrompt(promptQuestion);
+
+var color;
+
 colorResponse(response);
 
-
 document.getElementById("head").style.backgroundColor = color
+
+var message2 = "Do you like ice cream?"
+
+getPrompt(message2);
+
+giveAlert(response);
+
+
+
+
+
+
+
 //document.body.style.backgroundColor = "lightgreen"
 
 
