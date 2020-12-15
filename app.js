@@ -1,41 +1,42 @@
 console.log("Hello, my name is Garfield.");
 
-var promptQuestion = "Will Garfield become a good developer?"
-var response = prompt (promptQuestion); 
+var promptQuestion = "Will Garfield become a good developer?";
+var response = prompt(promptQuestion); 
 console. log(response);
 
 var alertMessage;
 
 if (response == "No") {
-    alertMessage = "No one really knows, we shall see"
+    alertMessage = "No one really knows, we shall see";
 } else if (response == "Yes") {
-    alertMessage = "Yea your right he's a pretty driven and motivated guy!"
+    alertMessage = "Yea your right he's a pretty driven and motivated guy!";
 } else {
-    alertMessage = "I think he will do great things."
+    alertMessage = "I think he will do great things.";
 }
 alert(alertMessage);
 
 var promptQuestion = "Do you like ice cream?";
-var response = prompt (promptQuestion); 
+var response = prompt(promptQuestion); 
 console.log (response);
 
 if (response == "yes"){
-    alertMessage = "good choice I like Ice Cream also"
+    alertMessage = "good choice I like Ice Cream also";
 } else if (response = "no"){
-    alertMessage = "why not? ice cream is good for you"
+    alertMessage = "why not? ice cream is good for you";
 }
 alert (alertMessage);
 
 var promptQuestion = "Do you like Beer?";
-var response = prompt (promptQuestion); 
+var response = prompt(promptQuestion); 
 console.log (response);
 
 if (response == "yes"){
-    alertMessage = "good choice beer is delicious"
+    alertMessage = "good choice beer is delicious";
 } else if (response = "no"){
-    alertMessage = "wise man alcohol isnt good for you"
+    alertMessage = "wise man alcohol isnt good for you";
 }
 alert (alertMessage);
+
 // function begin (string1, string2) {
 //     let bigstring = string1+" "+string2
 //     alert(bigstring)
