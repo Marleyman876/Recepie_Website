@@ -6,7 +6,6 @@ function colorResponse(rsp) {
     }
 }
 
-
 function giveAlert(ans){
     if(ans == "Yes"){
         alertMessage = "ice cream is good for your soul"
@@ -16,11 +15,25 @@ function giveAlert(ans){
     alert(alertMessage);
 }
 
+function userAnswer(decision){
+    if(decision == "no"){
+        giveAnswer = "neither do I"
+    }else{
+        giveAnswer = "its not too bad."
+    }
+    userAnswer(giveAnswer);
+}
+
 function getPrompt(message) {
     response = prompt(message); //value of whatever user gives us
 }
+function userAnswer(pass) {
+    displayMessage = prompt(pass); //value of whatever user gives us
+}
 
 var response;
+
+var userPrompt;
 
 var promptQuestion = "Will Garfield become a good developer?";
 getPrompt(promptQuestion);
@@ -31,11 +44,18 @@ colorResponse(response);
 
 document.getElementById("head").style.backgroundColor = color
 
-var message2 = "Do you like ice cream?"
+var message = "Do you like ice cream?"
 
-getPrompt(message2);
+getPrompt(message);
+
+var pass = "Do you like beer?"
+
+userAnswer(pass);
 
 giveAlert(response);
+
+
+
 
 
 
