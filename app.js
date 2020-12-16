@@ -1,9 +1,13 @@
 function colorResponse(rsp) {
+    var color;
+    
     if (rsp === "Yes"){
         color = "lightgreen";
-    } else if (rsp === "No"){
+    } else{
         color = "black";
     }
+    
+    document.getElementById("head").style.backgroundColor = color //return color;
 }
 
 function giveAlert(ans){
@@ -16,44 +20,41 @@ function giveAlert(ans){
 }
 
 function userAnswer(decision){
+    var giveAnswer;   
     if(decision == "no"){
         giveAnswer = "neither do I"
     }else{
         giveAnswer = "its not too bad."
     }
-    userAnswer(giveAnswer);
+    alert(giveAnswer);
+  
 }
 
 function getPrompt(message) {
     response = prompt(message); //value of whatever user gives us
-}
-function userAnswer(pass) {
-    displayMessage = prompt(pass); //value of whatever user gives us
-}
+   // console.log(response);
+  }
 
 var response;
 
 var userPrompt;
 
-var promptQuestion = "Will Garfield become a good developer?";
-getPrompt(promptQuestion);
-
-var color;
+var Question1 = "Will Garfield become a good developer?";
+getPrompt(Question1);
 
 colorResponse(response);
 
-document.getElementById("head").style.backgroundColor = color
+var Question2 = "Do you like ice cream?"
 
-var message = "Do you like ice cream?"
-
-getPrompt(message);
-
-var pass = "Do you like beer?"
-
-userAnswer(pass);
+getPrompt(Question2);
 
 giveAlert(response);
 
+var Question3 = "Do you like beer?"
+
+getPrompt(Question3);
+
+userAnswer(response);
 
 
 
@@ -63,7 +64,13 @@ giveAlert(response);
 
 
 
-//document.body.style.backgroundColor = "lightgreen"
+
+
+
+
+
+
+document.body.style.backgroundColor = "lightgreen"
 
 
 
@@ -132,3 +139,6 @@ giveAlert(response);
 // }
 // let sum = addThree (22,33,44) //declare a var called sum
 // alert (sum)  //calling function alert with param sum in order to get its side effect. a side effect is something a function does that is not related to its return.
+
+
+
