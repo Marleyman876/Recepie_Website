@@ -56,20 +56,6 @@ getPrompt(Question3);
 
 userAnswer(response);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.body.style.backgroundColor = "lightgreen"
 
 
@@ -140,5 +126,33 @@ document.body.style.backgroundColor = "lightgreen"
 // let sum = addThree (22,33,44) //declare a var called sum
 // alert (sum)  //calling function alert with param sum in order to get its side effect. a side effect is something a function does that is not related to its return.
 
+// function addImage(image, caption){
+//     if(image === "blonde"){
+//         caption = "unique";
+//     }
+//     document.write("<")
+// }
+
+// var ppl= prompt("how many people do you want?");
+// var default_image = document.getElementById("pretty");
+// var frau = "/Images/people.jpeg";
+// // var image;
+// for (var i = 0; i < 10; i++){
+//    console.log(i); 
+//    image = new image();
+//    image.src = frau;
+//    default_image.appendChild(image);
+//    //default_image.appendChild("/Images/people.jpeg");
+//     }
 
 
+function addPictoDocument(){
+    var numberOfPic = prompt("How many people do you want?");
+    for (var i = 0; i < numberOfPic; i++) {
+        document.write("<img src=\"Images/people.jpeg\">");
+    }
+}
+     addPictoDocument();    
+    
+    
+    
