@@ -155,4 +155,11 @@ function addPictoDocument(){
      addPictoDocument();    
     
     
-    
+function riddleMethis(){
+    var passcode = "afterall";
+    do{
+        var passwrd = prompt("Enter password: Hint :Its a small world")
+    } while (passwrd !== passcode);
+}
+
+riddleMethis();
